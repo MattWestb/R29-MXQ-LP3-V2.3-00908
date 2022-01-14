@@ -21,7 +21,7 @@ Installing  SSH helper and terminat in android and using this for duning the dev
 ```
 tar -zcvf  device.tar.gz /sys/firmware/devicetree/base/
 ```
-No comport pads found only 2 bads for bootig in mask rom (is near one of the not mounted maory chips see photo) and on the under side near the CPU bot not knowing what its for. I think the comport is on the SD-card conection but have not testing it.
+No comport pads found only 2 pads for bootig in mask rom (is near one of the not mounted maory chips see photo) and on the under side near the CPU bot not knowing what its for. I think the comport is on the SD-card conection but have not testing it.
 
 ARMBian and libreelec is the HDMI not working.
 libreelec its possible adding "ssh" and can conecting with SSH.
