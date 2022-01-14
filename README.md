@@ -1,0 +1,2 @@
+# R29-MXQ-LP3-V2.3-00908
+RK3228(A) TV box teardown
