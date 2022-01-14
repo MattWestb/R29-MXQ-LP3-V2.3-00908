@@ -35,6 +35,20 @@ DMESG from boot of libreelec with rk3228a-box.dtb as config (no WiFi and no crit
 Trying dunping with RK-dump but not working also with older derivers installed.
 RK_Android_Tool i can dooing dumps but i is 110% they is OK.
 Parameters looks being red OK and i have making it more times.
+```
+PARM  FIRMWARE_VER:7.0.0
+MACHINE_MODEL: hx322x_box
+MACHINE_ID:007
+MANUFACTURER:RK30SDK
+MAGIC: 0x5041524B
+ATAG: 0x60000800
+MACHINE: 3228
+CHECK_MASK: 0x80
+KERNEL_IMG: 0x60408000
+#RECOVER_KEY: 1,1,0,20,0 
+CMDLINE:console=ttyFIQ0 androidboot.selinux=permissive androidboot.hardware=rk30board androidboot.console=ttyFIQ0 init=/init mtdparts=rk29xxnand:0x00002000@0x00002000(uboot),0x00004000@0x00004000(trust),0x00002000@0x00008000(misc),0x00000800@0x0000A000(baseparamer),0x00007800@0x0000A800(resource),0x00006000@0x00012000(kernel),0x00006000@0x00018000(boot),0x00010000@0x0001E000(recovery),0x00020000@0x0002E000(backup),0x00040000@0x0004E000(cache),0x00008000@0x0008E000(metadata),0x00002000@0x00096000(kpanic),0x00400000@0x00098000(system),-@0x00498000(userdata)
+»Ü‰¤                                                                                                                                                                                                                                                   
+```
 Shall testing dumping the flash from Linux.
 
 Thinkin is i dont need the internal flash its also possible using SD-card and running ARMBian and if can patching one image file with libreelec boot and ARMBrian system it wold being great for running docker with RTL-433 and other good things.
