@@ -8,8 +8,6 @@ Kernel 3.10.104
 WiFi RTL8723AS module.
 
 Flash / RAM (probely fake) from reading with RK Android tool.  
-More real is MICRON 5HA98 JY941 (8GB eMMC eMMC 4.5, 1GB RAM Combo  Mem 256Mx8 NAND Flash + 32Mx32 LPDDR2 SDRAM 1.8V 162-Pin WFBGA)
-(from old recycled Samsung Galaxy Grand Prime SM-G530H).
 ```
 Flash ID: 45 4d 4d 43 20
 Manufactur SAMSUNG
@@ -21,7 +19,10 @@ ECC bits: 0
 Access time: 40
 Flash CS: 0
 ```
-Installing  SSH helper and terminat in android and using this for duning the device tree:
+More real is MICRON 5HA98 JY941 (8GB eMMC eMMC 4.5, 1GB RAM Combo  Mem 256Mx8 NAND Flash + 32Mx32 LPDDR2 SDRAM 1.8V 162-Pin WFBGA)
+(from old recycled Samsung Galaxy Grand Prime SM-G530H that waas relesed 2014). 
+  
+Installing  SSH helper and terminat in android and using this for dumping the device tree:
 ```
 tar -zcvf  device.tar.gz /sys/firmware/devicetree/base/
 ```
@@ -31,14 +32,14 @@ No comport pads found only 2 pads for bootig in mask rom (is near one of the not
 ![SD-Card](RK3228A4.jpg)
 I think (= have not testing) its the 4 contact from right and its pinnumber 5 then 9 is on the phased side and befor number 1 and is SCLK that is logic.
 
-ARMBian and libreelec is booting OKbut the HDMI not working.
-libreelec its possible adding "ssh" and can conecting with SSH.
-DMESG from boot of libreelec with rk3228a-box.dtb as config (no WiFi and no critical errors = very OK).
+multitool and libreelec is booting OK but the HDMI not working.  
+libreelec its possible adding "ssh" and can conecting with SSH.  
+DMESG from boot of libreelec with rk3228a-box.dtb as config (no WiFi and no critical errors = very OK).  
 
 
-Trying dunping with RK-dump but not working also with older derivers installed.
-RK_Android_Tool i can dooing dumps but i is 110% they is OK.
-Parameters looks being red OK and i have making it more times.
+Trying dunping with RK-dump but not working also with older derivers installed.  
+RK_Android_Tool i can dooing dumps but its not 110% is OK.  
+Parameters looks being red OK and i have making it more times. 
 ```
 PARM  FIRMWARE_VER:7.0.0
 MACHINE_MODEL: hx322x_box
