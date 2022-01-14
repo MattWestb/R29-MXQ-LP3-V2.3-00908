@@ -22,6 +22,7 @@ Installing  SSH helper and terminat in android and using this for duning the dev
 tar -zcvf  device.tar.gz /sys/firmware/devicetree/base/
 ```
 No comport pads found only 2 pads for bootig in mask rom (is near one of the not mounted meory chips see photo) and on the under side near the CPU but not knowing what its for. I think the comport is on the SD-card conection but have not testing it.
+![MASK-rom](RK3228A2.jpg)
 
 ARMBian and libreelec is booting OKbut the HDMI not working.
 libreelec its possible adding "ssh" and can conecting with SSH.
