@@ -5,7 +5,11 @@ Andoid 10.1 (real 7.X)
 
 Kernel 3.10.104
 
-Flash / RAM (probely fake)
+WiFi RTL8723AS module.
+
+Flash / RAM (probely fake) from reading with RK Android tool.  
+More real is MICRON 5HA98 JY941 (8GB eMMC eMMC 4.5, 1GB RAM Combo  Mem 256Mx8 NAND Flash + 32Mx32 LPDDR2 SDRAM 1.8V 162-Pin WFBGA)
+(from old recycled Samsung Galaxy Grand Prime SM-G530H).
 ```
 Flash ID: 45 4d 4d 43 20
 Manufactur SAMSUNG
