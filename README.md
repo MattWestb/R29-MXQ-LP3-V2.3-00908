@@ -73,4 +73,17 @@ Rebooting and its booting without SD-Card !!
 Only bad thing is with is the system is 4.4GB and the eMMC is only little more then 7.3GB so after update the system its not so much space playing around with.  
 Ater foryt OK boot runing rk322x-config and RK3228A is its possible eMMC (if not working put NAND in) emmc-hs200, ddr3-660 and led-config2. If eMMC is not working config NAND and rebooting nd rerun the tool and its working (orginal is both NAND and eMMC that is having problems with the hardware). After that the eMMC is always booting in highest speed (standard normaly degraded all the time). Then running  armbian-config and disabling loading the desctop and doing manual updated untill the system is OK and rebooting. Rebooting and from 
 Ater foryt OK boot runing rk322x-config and RK3228A is its possible eMMC (if not working put NAND in) emmc-hs200, ddr3-660 and led-config2. If eMMC is not working config NAND and rebooting nd rerun the tool and its working (orginal is both NAND and eMMC that is having problems with the hardware). After that the eMMC is always booting in highest speed (standard normaly degraded all the time). Then running  armbian-config and disabling loading the desctop and doing manual updated untill the system is OK and rebooting. Rebooting and from armbian-config need disabling desktop loading then its back after update and can also unistalling all unsued desctop probral like open office and mail and so on. Restarting ans you is having one fiocla updated with mainlain kernel :-))  
+  
+### Docker
+armbian-config can installing docker and hass but docker install in broken. Use the instruction from Docker-CE for Linux and its working OK.  
+Installing Portainer with standard indtruction for Linux and sll is well.  
+Now H and may problems. First very inporten then being asked of architekture you must selecting raspberrypi2 and if you is doing wrong its not possible redoing it if you is not finding where HA have hidden the setteing its reusing  also if uninstalling there installer !!  
+Us the normal HA instruction for installing superviced HA in linux and its working great for some minutes. Then its being problem that HA is alsocating the rest of the eMMC and all is beimng broken.  
+I was testig mounting one SD-card in /mnt/Docker and its working OK installing portainer untill HA is writing ther config and braking all.
+Best / easyest is formating one SD-card with ext4 and moounting it at /var/lib/docker and all is working OK installing HA then docker is now saving al containers in that directory. Then the mounting is working put the mount in /etc/fstab so the system is mounting it on boot..
+Now we is having  HA up and runing but AHs pulsaudio is using 2 CPUs with 100% so sertching for "Alsa & PulseAudio Fix" and installing itas one adon in HA and the CUP is idling on some %. 
+Now we is having HA suprovied up and running with the docker containers onthe SD-card and all of the system on internal eMMC.
+
+
+
 
