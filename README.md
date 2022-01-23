@@ -58,3 +58,19 @@ Shall testing dumping the flash from Linux.
 
 Thinkin is i dont need the internal flash its also possible using SD-card and running ARMBian and if can patching one image file with libreelec boot and ARMBrian system it wold being great for running docker with RTL-433 and other good things.
 
+#### ARMbian
+After some test acn soudering i can comfirming the pads under the CPU is the snolle and the pads by the not mounted mameor chips is the fore MASKROM.  
+Py playing around with mulltitool from local console is multitool not working OK then i an only see the warning messages and not to menues the program is having.
+Was teting 8 +  enter and the box is rebooting = very good and testing more untill i see one messahe "/dev/mmcblk2 sucseful erased" and i have deleting the internal eMMC by misstake :((((  
+  
+Was trying flashing one new loader on the internal eMMC but it looks that  the box is not likeing them and was finding 2 that is working and one is much older then the orginal and the other only little. from Linux. After getting on installed the system is booting OK on external SD-card without having one bootloader and uboot.  
+Bootit windows and trying RK anndroid tool and deleting the flash and flasing loaders and is getting some hard sotware bricks and need forcing madkrom with pads shutting for getting the box working. 
+Loader that not working: rk322x_loader_v1.10.256.bin Working one: RK322XMiniLoaderAll_V2.47_spectek_en_ddr2_rd_odt_171127.bin.  
+The box is very kinky with loader it having in loaded in the chip and most tools is not working OK also in Linux. 
+  
+Then having getting multiboots boot plus hidden partitation plus focal in one new after working i trying playing with focal and testing install bootloader in the eMMC and install armian on internal eMMC and its making one new /dev/mmcblk2p1 and copy the system i have booting.   
+Rebooting and its booting without SD-Card !!  
+Only bad thing is with is the system is 4.4GB and the eMMC is only little more then 7.3GB so after update the system its not so much space playing around with.  
+Ater foryt OK boot runing rk322x-config and RK3228A is its possible eMMC (if not working put NAND in) emmc-hs200, ddr3-660 and led-config2. If eMMC is not working config NAND and rebooting nd rerun the tool and its working (orginal is both NAND and eMMC that is having problems with the hardware). After that the eMMC is always booting in highest speed (standard normaly degraded all the time). Then running  armbian-config and disabling loading the desctop and doing manual updated untill the system is OK and rebooting. Rebooting and from 
+Ater foryt OK boot runing rk322x-config and RK3228A is its possible eMMC (if not working put NAND in) emmc-hs200, ddr3-660 and led-config2. If eMMC is not working config NAND and rebooting nd rerun the tool and its working (orginal is both NAND and eMMC that is having problems with the hardware). After that the eMMC is always booting in highest speed (standard normaly degraded all the time). Then running  armbian-config and disabling loading the desctop and doing manual updated untill the system is OK and rebooting. Rebooting and from armbian-config need disabling desktop loading then its back after update and can also unistalling all unsued desctop probral like open office and mail and so on. Restarting ans you is having one fiocla updated with mainlain kernel :-))  
+
