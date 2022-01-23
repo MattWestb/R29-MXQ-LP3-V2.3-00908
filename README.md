@@ -70,7 +70,29 @@ The box is very kinky with loader it having in loaded in the chip and most tools
   
 Then having getting multiboots boot plus hidden partitation plus focal in one new after working i trying playing with focal and testing install bootloader in the eMMC and install armian on internal eMMC and its making one new /dev/mmcblk2p1 and copy the system i have booting.   
 Rebooting and its booting without SD-Card !!  
-One greatthing is the the chip is having the old first loader but armbian-config is installing one updated secund stage ones in the eMMC so you is getting DDR3 USB and network boot support out of the box so you have all posebilitys booting the box.
+One greatthing is the the chip is having the old first loader but armbian-config is installing one updated secund stage ones in the eMMC so you is getting DDR3 USB and network boot support out of the box so you have all posebilitys booting the box.  
+The eMMC from the new loader:
+```
+=> mmcinfo
+Device: dwmmc@30020000
+Manufacturer ID: fe
+OEM: 14e
+Name: P1J95
+Bus Speed: 50000000
+Mode: MMC High Speed (52MHz)
+Rd Block Len: 512
+MMC version 4.5
+High Capacity: Yes
+Capacity: 7.3 GiB
+Bus Width: 8-bit
+Erase Group Size: 512 KiB
+HC WP Group Size: 8 MiB
+User Capacity: 7.3 GiB WRREL
+Boot Capacity: 2 MiB ENH
+RPMB Capacity: 2 MiB ENH
+Boot area 0 is not write protected
+Boot area 1 is not write protected
+```
 Only bad thing is with is the system is 4.4GB and the eMMC is only little more then 7.3GB so after update the system its not so much space playing around with.  
 Ater foryt OK boot runing rk322x-config and RK3228A is its possible eMMC (if not working put NAND in) emmc-hs200, ddr3-660 and led-config2. If eMMC is not working config NAND and rebooting nd rerun the tool and its working (orginal is both NAND and eMMC that is having problems with the hardware). After that the eMMC is always booting in highest speed (standard normaly degraded all the time). Then running  armbian-config and disabling loading the desctop and doing manual updated untill the system is OK and rebooting. Rebooting and from 
 Ater foryt OK boot runing rk322x-config and RK3228A is its possible eMMC (if not working put NAND in) emmc-hs200, ddr3-660 and led-config2. If eMMC is not working config NAND and rebooting nd rerun the tool and its working (orginal is both NAND and eMMC that is having problems with the hardware). After that the eMMC is always booting in highest speed (standard normaly degraded all the time). Then running  armbian-config and disabling loading the desctop and doing manual updated untill the system is OK and rebooting. Rebooting and from armbian-config need disabling desktop loading then its back after update and can also unistalling all unsued desctop probral like open office and mail and so on. Restarting ans you is having one fiocla updated with mainlain kernel :-))  
